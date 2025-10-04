@@ -120,7 +120,9 @@ const Home = () => {
                   textAlign: 'center',
                   p: 3,
                   display: 'flex',
+                  justifyContent: 'center', alignItems: 'center',
                   height: '100%',
+                  width: 200,
                   transition: 'transform 0.3s ease',
                   '&:hover': {
                     transform: 'translateY(-5px)'
@@ -321,7 +323,7 @@ const Home = () => {
       {/* CTA Section */}
       <Box
         sx={{
-          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+          background: 'linear-gradient(135deg,rgb(67, 143, 206) 0%,rgb(250, 250, 250) 100%)',
           color: 'white',
           py: 8,
           textAlign: 'center'
