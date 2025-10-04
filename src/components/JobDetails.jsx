@@ -24,8 +24,7 @@ import {
   Bookmark
 } from '@mui/icons-material';
 import { useParams, useNavigate } from 'react-router-dom';
-import UploadFileIcon from '@mui/icons-material/UploadFile';
-import { supabase } from '../supabaseClient'; // adjust path if needed
+
 
 const JobDetails = () => {
   const { id } = useParams();

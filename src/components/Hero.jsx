@@ -129,7 +129,7 @@ const Hero = () => {
           </Grid>
 
           {/* Right Side - Drop Your Resume Form */}
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <Paper
               elevation={3}
               sx={{
@@ -152,8 +152,8 @@ const Hero = () => {
                 Drop Your Resume
               </Typography>
 
-              <Grid container spacing={2}>
-                <Grid item xs={12}>
+              <Grid container spacing={2} >
+                <Grid item xs={12} sx={ { width: 300}}>
                   <TextField
                     fullWidth
                     label="Full Name"
@@ -168,7 +168,7 @@ const Hero = () => {
                   />
                 </Grid>
 
-                <Grid item xs={12}>
+                <Grid item xs={12} sx={ { width: 300}}>
                   <TextField
                     fullWidth
                     label="Phone Number"
@@ -183,7 +183,7 @@ const Hero = () => {
                   />
                 </Grid>
 
-                <Grid item xs={12}>
+                <Grid item xs={12} sx={ { width: 300}}>
                   <TextField
                     fullWidth
                     label="Preferred Job Type"
@@ -199,7 +199,7 @@ const Hero = () => {
                   />
                 </Grid>
 
-                <Grid item xs={12}>
+                <Grid item xs={12} sx={ { width: 300}}>
                   <Button
                     variant="outlined"
                     component="label"
@@ -226,7 +226,7 @@ const Hero = () => {
                   </Button>
                 </Grid>
 
-                <Grid item xs={12}>
+                <Grid item xs={12} sx={ { width: 300}}>
                   <Button
                     fullWidth
                     variant="contained"
