@@ -4,7 +4,6 @@ import {
   Container,
   Grid,
   Typography,
-  Link,
   IconButton,
   Divider
 } from '@mui/material';
@@ -18,10 +17,10 @@ import {
   LocationOn,
   Work
 } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
 
   const socialLinks = [
     { icon: Facebook, url: '#', label: 'Facebook' },
@@ -102,8 +101,6 @@ const Footer = () => {
               </Box>
             </Box>
           </Grid>
-
-
         </Grid>
 
         <Divider sx={{ my: 4, backgroundColor: 'rgba(255,255,255,0.1)' }} />
@@ -124,41 +121,41 @@ const Footer = () => {
           
           <Box sx={{ display: 'flex', gap: 3 }}>
             <Link
-              href="/privacy-policy"
-              sx={{
-                color: 'text.secondary',
+              to="/privacy-policy"
+              style={{
+                color: 'rgba(255, 255, 255, 0.7)',
                 textDecoration: 'none',
                 fontSize: '0.875rem',
-                '&:hover': {
-                  color: '#1976d2'
-                }
+                transition: 'color 0.3s ease'
               }}
+              onMouseOver={(e) => e.target.style.color = '#1976d2'}
+              onMouseOut={(e) => e.target.style.color = 'rgba(255, 255, 255, 0.7)'}
             >
               Privacy Policy
             </Link>
             <Link
-              href="terms-of-service"
-              sx={{
-                color: 'text.secondary',
+              to="/terms-of-service"
+              style={{
+                color: 'rgba(255, 255, 255, 0.7)',
                 textDecoration: 'none',
                 fontSize: '0.875rem',
-                '&:hover': {
-                  color: '#1976d2'
-                }
+                transition: 'color 0.3s ease'
               }}
+              onMouseOver={(e) => e.target.style.color = '#1976d2'}
+              onMouseOut={(e) => e.target.style.color = 'rgba(255, 255, 255, 0.7)'}
             >
               Terms of Service
             </Link>
             <Link
-              href="cookie-policy"
-              sx={{
-                color: 'text.secondary',
+              to="/cookie-policy"
+              style={{
+                color: 'rgba(255, 255, 255, 0.7)',
                 textDecoration: 'none',
                 fontSize: '0.875rem',
-                '&:hover': {
-                  color: '#1976d2'
-                }
+                transition: 'color 0.3s ease'
               }}
+              onMouseOver={(e) => e.target.style.color = '#1976d2'}
+              onMouseOut={(e) => e.target.style.color = 'rgba(255, 255, 255, 0.7)'}
             >
               Cookie Policy
             </Link>

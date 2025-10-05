@@ -6,8 +6,6 @@ import {
   Grid,
   Card,
   CardContent,
-  Avatar,
-  Chip,
   Button
 } from '@mui/material';
 import {
@@ -15,16 +13,11 @@ import {
   Business,
   Security,
   ConnectWithoutContact,
-  TrendingUp,
-  Star,
-  LocationOn,
-  Groups,
   VerifiedUser
 } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
 const About = () => {
-  
-
   const values = [
     {
       icon: <Handshake />,
@@ -263,19 +256,13 @@ const About = () => {
                 ))}
               </Box>
             </Grid>
-            
- 
           </Grid>
         </Container>
       </Box>
 
       {/* Our Story */}
       <Container maxWidth="lg" sx={{ py: 6 }}>
-
-        
         <Grid container spacing={4} alignItems="center">
-
-          
           <Grid item xs={12} md={6}>
             <Typography variant="body1" sx={{ lineHeight: 1.8, fontSize: '1.1rem', mb: 3 }}>
               HireAxis operates as a specialized broker in the employment ecosystem. We recognized 
@@ -295,10 +282,6 @@ const About = () => {
         </Grid>
       </Container>
 
-
-
-
-
       {/* CTA Section */}
       <Container maxWidth="md" sx={{ py: 6, textAlign: 'center' }}>
         <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
@@ -308,6 +291,8 @@ const About = () => {
           Join thousands who have found reliable employment through our trusted agency partners
         </Typography>
         <Button
+          component={Link}
+          to="/contact"
           variant="contained"
           size="large"
           sx={{
@@ -316,7 +301,6 @@ const About = () => {
             fontSize: '1.1rem',
             fontWeight: 'bold'
           }}
-          onClick={() => window.location.href = '/contact'}
         >
           Contact Us
         </Button>
