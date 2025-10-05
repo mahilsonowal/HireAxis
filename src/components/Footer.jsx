@@ -26,7 +26,7 @@ const Footer = () => {
     { icon: Facebook, url: '#', label: 'Facebook' },
     { icon: Twitter, url: '#', label: 'Twitter' },
     { icon: LinkedIn, url: '#', label: 'LinkedIn' },
-    { icon: Instagram, url: '#', label: 'Instagram' }
+    { icon: Instagram, url: 'https://www.instagram.com/hireaxis.info?igsh=anJnYTdzdm40bXVq', label: 'Instagram' }
   ];
 
   return (
